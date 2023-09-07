@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Ingresar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<div>
+  <ion-content class="background-black"></ion-content>
+  <ion-grid></ion-grid>
+</div>
+
+<ion-content>
+
+  <ion-title class="titulo">Pokedex</ion-title>
+
+  <div class="text">
+    <p class="su">¿Alguna vez has soñado con explorar el maravilloso mundo de los Pokémon y convertirte en un auténtico
+      Entrenador Pokémon? ¡La aventura te espera, y yo te invito a embarcarte en este emocionante viaje!</p>  
+  </div>
+
+
+  <ion-card-content>
+    <ion-card-header>
+      <ion-card-title>Registrarse</ion-card-title>
+    </ion-card-header>
+
+
+    <form [formGroup]="formularioRegistro">
+      <ion-input label="Nombre de entrenador" label-placement="floating" fill="outline" placeholder="Ingrese su nombre de entrenador"
+        formControlName="nombre"></ion-input>
+      <br>
+      <ion-input label="Contraseña" label-placement="floating" fill="outline" placeholder="Ingrese su contraseña"
+        formControlName="password" type="password"></ion-input>
+      <br>
+      <ion-input label="Repetir Contraseña" label-placement="floating" fill="outline" placeholder="Repita su contraseña"
+        formControlName="confirmacionPassword" type="password"></ion-input>
+    </form>
+      <br>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col></ion-col>
+        <ion-col>
+          <ion-button (click)="guardar()">
+            Registrarse
+          </ion-button>
+        </ion-col>
+        <ion-col></ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </ion-card-content>

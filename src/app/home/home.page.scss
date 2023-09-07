@@ -1,0 +1,28 @@
+.background-black{
+  --background: linear-gradient(to bottom, #222224, #222224);
+} 
+
+.tarjeta{
+  height: 200px;
+  width: 130px;
+  align-items: center;
+  --background: linear-gradient(to bottom, #ee1515, #f00000);
+}
+
+.imag{
+  height: 100px;
+  width: 100px;
+}
+
+.name{
+  font-size: 15px;
+  padding: 5px;
+}
+
+.mas-tipos{
+
+  position: absolute;
+  left: 80%;
+  top: 90%;
+  
+}

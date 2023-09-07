@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Tipos de pokemon</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<div>
+  <ion-content class="background-black"></ion-content>
+  <ion-grid></ion-grid>
+</div>
+
+<br> 
+
+<ion-content >
+
+  <div >
+    <ion-button expand="block" *ngFor="let list of listtipos" class="boton-tipo" [routerLink]="['/detalletipo']">{{list.tipo}}</ion-button>
+  </div>
+
+</ion-content>

@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Tipos de pokemon</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-grid>
+    <ion-row>
+
+        <ion-card *ngFor="let deta of listPokemones" (click)="Navigate(deta)" class="tarjeta" >
+          <ion-card class="id"> <ion-card-title class="name">{{deta.id}}</ion-card-title></ion-card>
+          <ion-card>
+            <img alt="" src="{{deta.imageurl}}" class="imag" />
+
+            <ion-card-title class="name">{{deta.name}}</ion-card-title>
+          </ion-card>
+        </ion-card>
+
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

@@ -1,0 +1,57 @@
+<ion-content class="background-red">
+
+
+  <ion-title>Pokedex</ion-title>
+
+
+<!--inicio tarejeta del login------------------------------------>
+
+<ion-card-content>
+  <form [formGroup]="formularioLogin">
+    <ion-input label="Correo electronico" label-placement="floating" fill="outline" placeholder="Enter text" formControlName="nombre"></ion-input>
+    <br>
+    <ion-input label="Contraseña" label-placement="floating" fill="outline" placeholder="Enter text" formControlName="password" type="password"></ion-input>
+  </form>
+  <br>  
+</ion-card-content>
+
+</ion-content>
+
+<!--fin tarjeta de login---------------------------------------->
+
+
+<div>
+  <ion-content class="background-black"></ion-content>
+    <ion-grid></ion-grid>
+</div>
+
+
+<ion-content class="background-white">
+
+  <ion-grid>
+    <ion-row>
+      <ion-col></ion-col>
+      <ion-col class="boton-ingreso">
+        <ion-button class="text-boton-ingreso" (click)="ingresar()">Ingresar</ion-button>
+      </ion-col>
+      <ion-col></ion-col>
+    </ion-row>
+  </ion-grid>
+
+  
+
+  <ion-grid>
+    <ion-row>
+      <ion-col></ion-col>
+      <ion-col class="boton-registro">
+        <ion-buttons>
+          <ion-button [routerLink]="['/registro']"><h6>Registrarse</h6></ion-button>
+        </ion-buttons>
+      </ion-col>
+      <ion-col></ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+
+</ion-content>

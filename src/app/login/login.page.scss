@@ -1,0 +1,38 @@
+.background-red{
+    --background: linear-gradient(to bottom, #ee1515, #f00000);
+}
+
+.background-black{
+    --background: linear-gradient(to bottom, #222224, #222224);
+} 
+
+.background-white{
+    --background: linear-gradient(to bottom, #f0f0f0, #f0f0f0);
+}
+
+ion-title{
+    font-size: 50px;
+    text-align: center;
+    padding-top: 30%;
+}
+ion-input{
+    --background: linear-gradient(to bottom, #f0f0f0, #f0f0f0);
+}
+
+.boton-ingreso{
+    text-align: center;
+    padding-top: 20px;
+}
+
+ion-button {
+    --background: 	#222224;
+  
+    --color: white;
+  
+    --padding-top: 10px;
+    --padding-bottom: 10px;
+}
+
+.boton-registro{
+    text-align: center;
+}

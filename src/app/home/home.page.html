@@ -1,0 +1,44 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+      Pokedex
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<div>
+  <ion-content class="background-black"></ion-content>
+  <ion-grid></ion-grid>
+</div>
+
+<ion-searchbar show-clear-button="always" value="Always Show" ></ion-searchbar>
+
+<ion-content>
+
+  <ion-grid>
+    <ion-row>
+
+        <ion-card *ngFor="let deta of listPokemones" (click)="Navigate(deta)" class="tarjeta" >
+          <ion-card class="id"> <ion-card-title class="name">{{deta.id}}</ion-card-title></ion-card>
+          <ion-card>
+            <img alt="" src="{{deta.imageurl}}" class="imag" />
+
+            <ion-card-title class="name">{{deta.name}}</ion-card-title>
+          </ion-card>
+        </ion-card>
+
+    </ion-row>
+  </ion-grid>
+
+
+
+</ion-content>
+
+<ion-fab class="mas-tipos">
+  <ion-fab-button>
+    <ion-icon name="add" [routerLink]="['/tipos']"></ion-icon>
+  </ion-fab-button>
+</ion-fab>
+
+
+

@@ -1,0 +1,32 @@
+.background-black{
+    --background: linear-gradient(to bottom, #222224, #222224);
+} 
+
+.titulo{
+    font-size: 50px;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.text{
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+ion-input{
+    --background: linear-gradient(to bottom, #f0f0f0, #f0f0f0);
+}
+
+.boton-ingreso{
+    text-align: center;
+    padding-top: 20px;
+}
+
+ion-button {
+    --background: 	#222224;
+  
+    --color: white;
+  
+    --padding-top: 10px;
+    --padding-bottom: 10px;
+}
